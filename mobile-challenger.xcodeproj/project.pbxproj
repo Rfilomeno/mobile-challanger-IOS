@@ -1,0 +1,1009 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D99DADB3B744C5EDB3BB704 /* Pods_mobile_challenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97193097482F352812A1B4B0 /* Pods_mobile_challenger.framework */; };
+		11036E0D77F0133673168ABB /* Pods_mobile_challengerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8885AB773BFB655B77049B1 /* Pods_mobile_challengerTests.framework */; };
+		DB9DD7A415CFE9B94851485B /* Pods_mobile_challengerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 671030C4A7E48820585B55C6 /* Pods_mobile_challengerUITests.framework */; };
+		FD16A8E322ABED380004E366 /* CheckInternetConnectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD16A8E222ABED380004E366 /* CheckInternetConnectionHelper.swift */; };
+		FD16A8E522ABEF260004E366 /* BotaoAnimadoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD16A8E422ABEF260004E366 /* BotaoAnimadoHelper.swift */; };
+		FD1C5DBF22B085EC00D9E804 /* ConfiguracaoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C5DBE22B085EC00D9E804 /* ConfiguracaoTests.swift */; };
+		FD1C5DC122B0874400D9E804 /* DataFormatHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C5DC022B0874400D9E804 /* DataFormatHelperTests.swift */; };
+		FD1C5DC322B088DF00D9E804 /* FiltroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C5DC222B088DF00D9E804 /* FiltroTests.swift */; };
+		FD1C5DC522B093D000D9E804 /* OrdenaListaRepositorioHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1C5DC422B093D000D9E804 /* OrdenaListaRepositorioHelperTests.swift */; };
+		FD22088A22A1555600427C82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22088922A1555600427C82 /* AppDelegate.swift */; };
+		FD22088C22A1555600427C82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22088B22A1555600427C82 /* ViewController.swift */; };
+		FD22088F22A1555600427C82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD22088D22A1555600427C82 /* Main.storyboard */; };
+		FD22089222A1555600427C82 /* mobile_challenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD22089022A1555600427C82 /* mobile_challenger.xcdatamodeld */; };
+		FD22089422A1555800427C82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD22089322A1555800427C82 /* Assets.xcassets */; };
+		FD22089722A1555800427C82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD22089522A1555800427C82 /* LaunchScreen.storyboard */; };
+		FD2208AD22A1555800427C82 /* mobile_challengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2208AC22A1555800427C82 /* mobile_challengerUITests.swift */; };
+		FD26E3B222A7ED3E00C6120A /* UsuarioDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26E3B122A7ED3E00C6120A /* UsuarioDAO.swift */; };
+		FD26E3BF22A889F900C6120A /* RepositorioDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26E3BE22A889F900C6120A /* RepositorioDAO.swift */; };
+		FD26E3C422A8A4AA00C6120A /* ConversorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26E3C322A8A4AA00C6120A /* ConversorHelper.swift */; };
+		FD26F1F722AB0AF000C55A9D /* refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = FD26F1F622AB0AF000C55A9D /* refresh.png */; };
+		FD280EFE22B2585A00AEFE96 /* Desafio Mobile Manual de Usabilidade.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FD280EFD22B2585A00AEFE96 /* Desafio Mobile Manual de Usabilidade.pdf */; };
+		FD280F0122B25B2900AEFE96 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD280EFF22B25B2900AEFE96 /* PDFViewController.swift */; };
+		FD280F0222B25B2900AEFE96 /* PDFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD280F0022B25B2900AEFE96 /* PDFViewController.xib */; };
+		FD280F0422B266EE00AEFE96 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = FD280F0322B266EE00AEFE96 /* help.png */; };
+		FD2835D522A49C98008CE2EB /* OrdenaListaRepositorioHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2835D422A49C98008CE2EB /* OrdenaListaRepositorioHelper.swift */; };
+		FD2835D922A4A5EC008CE2EB /* plus-white.png in Resources */ = {isa = PBXBuildFile; fileRef = FD2835D722A4A5EC008CE2EB /* plus-white.png */; };
+		FD29B67222B133A700837300 /* AutenticacaoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD29B67122B133A700837300 /* AutenticacaoHelper.swift */; };
+		FD30622022A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD30621E22A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.swift */; };
+		FD30622122A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD30621F22A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.xib */; };
+		FD30622822A2A96C00E22DC9 /* chevron-right.png in Resources */ = {isa = PBXBuildFile; fileRef = FD30622722A2A96B00E22DC9 /* chevron-right.png */; };
+		FD30622A22A2B18200E22DC9 /* fork-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD30622922A2B18200E22DC9 /* fork-icon.png */; };
+		FD30622C22A2B18F00E22DC9 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = FD30622B22A2B18F00E22DC9 /* star.png */; };
+		FD30623122A2F31900E22DC9 /* RepositorioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD30622F22A2F31900E22DC9 /* RepositorioViewController.swift */; };
+		FD30623222A2F31900E22DC9 /* RepositorioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD30623022A2F31900E22DC9 /* RepositorioViewController.xib */; };
+		FD30623422A2F65B00E22DC9 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = FD30623322A2F65B00E22DC9 /* arrow-left.png */; };
+		FD30623622A3023A00E22DC9 /* gitHub.png in Resources */ = {isa = PBXBuildFile; fileRef = FD30623522A3023900E22DC9 /* gitHub.png */; };
+		FD30623822A30F3400E22DC9 /* DataFormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD30623722A30F3400E22DC9 /* DataFormatHelper.swift */; };
+		FD30623A22A31E9400E22DC9 /* SafariHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD30623922A31E9400E22DC9 /* SafariHelper.swift */; };
+		FD30623C22A355A800E22DC9 /* HistoricoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD30623B22A355A800E22DC9 /* HistoricoTableViewCell.swift */; };
+		FD30623E22A3591200E22DC9 /* radix-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FD30623D22A3591200E22DC9 /* radix-icon.png */; };
+		FD394EE322A4511F00032219 /* octocat-white.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FD394EE222A4511F00032219 /* octocat-white.pdf */; };
+		FD394EE522A45E9C00032219 /* Filtro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD394EE422A45E9C00032219 /* Filtro.swift */; };
+		FD61CAB222A1C12D0005CD77 /* radix.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD61CAAE22A1C12D0005CD77 /* radix.jpg */; };
+		FD61CAB322A1C12D0005CD77 /* recent.png in Resources */ = {isa = PBXBuildFile; fileRef = FD61CAAF22A1C12D0005CD77 /* recent.png */; };
+		FD61CAB422A1C12D0005CD77 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = FD61CAB022A1C12D0005CD77 /* search.png */; };
+		FD61CABA22A1C3360005CD77 /* HistoricoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CAB922A1C3360005CD77 /* HistoricoViewController.swift */; };
+		FD61CABD22A1C4B90005CD77 /* UsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CABB22A1C4B90005CD77 /* UsuarioViewController.swift */; };
+		FD61CABE22A1C4B90005CD77 /* UsuarioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD61CABC22A1C4B90005CD77 /* UsuarioViewController.xib */; };
+		FD61CAC322A202740005CD77 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CAC222A202740005CD77 /* Usuario.swift */; };
+		FD61CAC522A202B70005CD77 /* Repositorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CAC422A202B70005CD77 /* Repositorio.swift */; };
+		FD61CAC822A203A00005CD77 /* GitHubApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CAC722A203A00005CD77 /* GitHubApi.swift */; };
+		FD61CACB22A204280005CD77 /* Configuracao.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CACA22A204280005CD77 /* Configuracao.swift */; };
+		FD61CACD22A206140005CD77 /* AlertDialogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD61CACC22A206140005CD77 /* AlertDialogHelper.swift */; };
+		FDAA440E22AFF57500D7E24A /* UsuarioDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA440C22AFF0E900D7E24A /* UsuarioDAOTests.swift */; };
+		FDAA441022B00AC800D7E24A /* RepositorioDAOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA440F22B00AC800D7E24A /* RepositorioDAOTests.swift */; };
+		FDAA441222B017CB00D7E24A /* ConversorHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAA441122B017CB00D7E24A /* ConversorHelperTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD22089E22A1555800427C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD22087E22A1555600427C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD22088522A1555600427C82;
+			remoteInfo = "mobile-challenger";
+		};
+		FD2208A922A1555800427C82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD22087E22A1555600427C82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD22088522A1555600427C82;
+			remoteInfo = "mobile-challenger";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		475D0AF1F1F8DBA76C4648BF /* Pods-mobile-challengerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-challengerUITests.release.xcconfig"; path = "Target Support Files/Pods-mobile-challengerUITests/Pods-mobile-challengerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		671030C4A7E48820585B55C6 /* Pods_mobile_challengerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_challengerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962505BE46AC447380CFCC0F /* Pods-mobile-challengerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-challengerTests.debug.xcconfig"; path = "Target Support Files/Pods-mobile-challengerTests/Pods-mobile-challengerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97193097482F352812A1B4B0 /* Pods_mobile_challenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_challenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A79B3E92967F9F52702FB99 /* Pods-mobile-challengerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-challengerTests.release.xcconfig"; path = "Target Support Files/Pods-mobile-challengerTests/Pods-mobile-challengerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C822F0CF79C9992A7C1AE230 /* Pods-mobile-challengerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-challengerUITests.debug.xcconfig"; path = "Target Support Files/Pods-mobile-challengerUITests/Pods-mobile-challengerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C8885AB773BFB655B77049B1 /* Pods_mobile_challengerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobile_challengerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8A56C2C8C190671E58733EF /* Pods-mobile-challenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-challenger.debug.xcconfig"; path = "Target Support Files/Pods-mobile-challenger/Pods-mobile-challenger.debug.xcconfig"; sourceTree = "<group>"; };
+		ECFB8649B319F55315DCD5EA /* Pods-mobile-challenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobile-challenger.release.xcconfig"; path = "Target Support Files/Pods-mobile-challenger/Pods-mobile-challenger.release.xcconfig"; sourceTree = "<group>"; };
+		FD16A8E222ABED380004E366 /* CheckInternetConnectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInternetConnectionHelper.swift; sourceTree = "<group>"; };
+		FD16A8E422ABEF260004E366 /* BotaoAnimadoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotaoAnimadoHelper.swift; sourceTree = "<group>"; };
+		FD1C5DBE22B085EC00D9E804 /* ConfiguracaoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfiguracaoTests.swift; sourceTree = "<group>"; };
+		FD1C5DC022B0874400D9E804 /* DataFormatHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatHelperTests.swift; sourceTree = "<group>"; };
+		FD1C5DC222B088DF00D9E804 /* FiltroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltroTests.swift; sourceTree = "<group>"; };
+		FD1C5DC422B093D000D9E804 /* OrdenaListaRepositorioHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdenaListaRepositorioHelperTests.swift; sourceTree = "<group>"; };
+		FD22088622A1555600427C82 /* mobile-challenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobile-challenger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD22088922A1555600427C82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD22088B22A1555600427C82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD22088E22A1555600427C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD22089122A1555600427C82 /* mobile_challenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mobile_challenger.xcdatamodel; sourceTree = "<group>"; };
+		FD22089322A1555800427C82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD22089622A1555800427C82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD22089822A1555800427C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD22089D22A1555800427C82 /* mobile-challengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-challengerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2208A322A1555800427C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD2208A822A1555800427C82 /* mobile-challengerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobile-challengerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD2208AC22A1555800427C82 /* mobile_challengerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobile_challengerUITests.swift; sourceTree = "<group>"; };
+		FD2208AE22A1555800427C82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD26E3B122A7ED3E00C6120A /* UsuarioDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioDAO.swift; sourceTree = "<group>"; };
+		FD26E3BE22A889F900C6120A /* RepositorioDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioDAO.swift; sourceTree = "<group>"; };
+		FD26E3C322A8A4AA00C6120A /* ConversorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorHelper.swift; sourceTree = "<group>"; };
+		FD26F1F622AB0AF000C55A9D /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		FD280EFD22B2585A00AEFE96 /* Desafio Mobile Manual de Usabilidade.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Desafio Mobile Manual de Usabilidade.pdf"; sourceTree = "<group>"; };
+		FD280EFF22B25B2900AEFE96 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		FD280F0022B25B2900AEFE96 /* PDFViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PDFViewController.xib; sourceTree = "<group>"; };
+		FD280F0322B266EE00AEFE96 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		FD2835D422A49C98008CE2EB /* OrdenaListaRepositorioHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdenaListaRepositorioHelper.swift; sourceTree = "<group>"; };
+		FD2835D722A4A5EC008CE2EB /* plus-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-white.png"; sourceTree = "<group>"; };
+		FD29B67122B133A700837300 /* AutenticacaoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoHelper.swift; sourceTree = "<group>"; };
+		FD30621E22A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriosUsuarioTableViewCell.swift; sourceTree = "<group>"; };
+		FD30621F22A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriosUsuarioTableViewCell.xib; sourceTree = "<group>"; };
+		FD30622722A2A96B00E22DC9 /* chevron-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chevron-right.png"; sourceTree = "<group>"; };
+		FD30622922A2B18200E22DC9 /* fork-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fork-icon.png"; sourceTree = "<group>"; };
+		FD30622B22A2B18F00E22DC9 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		FD30622F22A2F31900E22DC9 /* RepositorioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioViewController.swift; sourceTree = "<group>"; };
+		FD30623022A2F31900E22DC9 /* RepositorioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositorioViewController.xib; sourceTree = "<group>"; };
+		FD30623322A2F65B00E22DC9 /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
+		FD30623522A3023900E22DC9 /* gitHub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gitHub.png; sourceTree = "<group>"; };
+		FD30623722A30F3400E22DC9 /* DataFormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFormatHelper.swift; sourceTree = "<group>"; };
+		FD30623922A31E9400E22DC9 /* SafariHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariHelper.swift; sourceTree = "<group>"; };
+		FD30623B22A355A800E22DC9 /* HistoricoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoTableViewCell.swift; sourceTree = "<group>"; };
+		FD30623D22A3591200E22DC9 /* radix-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radix-icon.png"; sourceTree = "<group>"; };
+		FD394EE222A4511F00032219 /* octocat-white.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "octocat-white.pdf"; sourceTree = "<group>"; };
+		FD394EE422A45E9C00032219 /* Filtro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filtro.swift; sourceTree = "<group>"; };
+		FD61CAAE22A1C12D0005CD77 /* radix.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = radix.jpg; sourceTree = "<group>"; };
+		FD61CAAF22A1C12D0005CD77 /* recent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = recent.png; sourceTree = "<group>"; };
+		FD61CAB022A1C12D0005CD77 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		FD61CAB922A1C3360005CD77 /* HistoricoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricoViewController.swift; sourceTree = "<group>"; };
+		FD61CABB22A1C4B90005CD77 /* UsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioViewController.swift; sourceTree = "<group>"; };
+		FD61CABC22A1C4B90005CD77 /* UsuarioViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsuarioViewController.xib; sourceTree = "<group>"; };
+		FD61CAC222A202740005CD77 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		FD61CAC422A202B70005CD77 /* Repositorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositorio.swift; sourceTree = "<group>"; };
+		FD61CAC722A203A00005CD77 /* GitHubApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubApi.swift; sourceTree = "<group>"; };
+		FD61CACA22A204280005CD77 /* Configuracao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuracao.swift; sourceTree = "<group>"; };
+		FD61CACC22A206140005CD77 /* AlertDialogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialogHelper.swift; sourceTree = "<group>"; };
+		FDAA440C22AFF0E900D7E24A /* UsuarioDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioDAOTests.swift; sourceTree = "<group>"; };
+		FDAA440F22B00AC800D7E24A /* RepositorioDAOTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositorioDAOTests.swift; sourceTree = "<group>"; };
+		FDAA441122B017CB00D7E24A /* ConversorHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversorHelperTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD22088322A1555600427C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D99DADB3B744C5EDB3BB704 /* Pods_mobile_challenger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD22089A22A1555800427C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11036E0D77F0133673168ABB /* Pods_mobile_challengerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2208A522A1555800427C82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9DD7A415CFE9B94851485B /* Pods_mobile_challengerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6E78CCCCD3399CC897B6CCB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				97193097482F352812A1B4B0 /* Pods_mobile_challenger.framework */,
+				C8885AB773BFB655B77049B1 /* Pods_mobile_challengerTests.framework */,
+				671030C4A7E48820585B55C6 /* Pods_mobile_challengerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB086E3EABD83D1FB61F90C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8A56C2C8C190671E58733EF /* Pods-mobile-challenger.debug.xcconfig */,
+				ECFB8649B319F55315DCD5EA /* Pods-mobile-challenger.release.xcconfig */,
+				962505BE46AC447380CFCC0F /* Pods-mobile-challengerTests.debug.xcconfig */,
+				9A79B3E92967F9F52702FB99 /* Pods-mobile-challengerTests.release.xcconfig */,
+				C822F0CF79C9992A7C1AE230 /* Pods-mobile-challengerUITests.debug.xcconfig */,
+				475D0AF1F1F8DBA76C4648BF /* Pods-mobile-challengerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD22087D22A1555600427C82 = {
+			isa = PBXGroup;
+			children = (
+				FD22088822A1555600427C82 /* mobile-challenger */,
+				FD2208A022A1555800427C82 /* mobile-challengerTests */,
+				FD2208AB22A1555800427C82 /* mobile-challengerUITests */,
+				FD22088722A1555600427C82 /* Products */,
+				CB086E3EABD83D1FB61F90C7 /* Pods */,
+				A6E78CCCCD3399CC897B6CCB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FD22088722A1555600427C82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD22088622A1555600427C82 /* mobile-challenger.app */,
+				FD22089D22A1555800427C82 /* mobile-challengerTests.xctest */,
+				FD2208A822A1555800427C82 /* mobile-challengerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD22088822A1555600427C82 /* mobile-challenger */ = {
+			isa = PBXGroup;
+			children = (
+				FD22088922A1555600427C82 /* AppDelegate.swift */,
+				FD61CAB822A1C1B90005CD77 /* Models */,
+				FD61CAB722A1C1B10005CD77 /* Views */,
+				FD61CAB622A1C1A90005CD77 /* Controllers */,
+				FD22089322A1555800427C82 /* Assets.xcassets */,
+				FD61CAAD22A1C12D0005CD77 /* Assets */,
+				FD22089822A1555800427C82 /* Info.plist */,
+				FD22089022A1555600427C82 /* mobile_challenger.xcdatamodeld */,
+			);
+			path = "mobile-challenger";
+			sourceTree = "<group>";
+		};
+		FD2208A022A1555800427C82 /* mobile-challengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD2208A322A1555800427C82 /* Info.plist */,
+				FDAA440C22AFF0E900D7E24A /* UsuarioDAOTests.swift */,
+				FDAA440F22B00AC800D7E24A /* RepositorioDAOTests.swift */,
+				FDAA441122B017CB00D7E24A /* ConversorHelperTests.swift */,
+				FD1C5DBE22B085EC00D9E804 /* ConfiguracaoTests.swift */,
+				FD1C5DC022B0874400D9E804 /* DataFormatHelperTests.swift */,
+				FD1C5DC222B088DF00D9E804 /* FiltroTests.swift */,
+				FD1C5DC422B093D000D9E804 /* OrdenaListaRepositorioHelperTests.swift */,
+			);
+			path = "mobile-challengerTests";
+			sourceTree = "<group>";
+		};
+		FD2208AB22A1555800427C82 /* mobile-challengerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD2208AC22A1555800427C82 /* mobile_challengerUITests.swift */,
+				FD2208AE22A1555800427C82 /* Info.plist */,
+			);
+			path = "mobile-challengerUITests";
+			sourceTree = "<group>";
+		};
+		FD280EFC22B2583300AEFE96 /* Manual */ = {
+			isa = PBXGroup;
+			children = (
+				FD280EFD22B2585A00AEFE96 /* Desafio Mobile Manual de Usabilidade.pdf */,
+			);
+			path = Manual;
+			sourceTree = "<group>";
+		};
+		FD30621D22A2A3AE00E22DC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD30621E22A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.swift */,
+				FD30623B22A355A800E22DC9 /* HistoricoTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FD30622222A2A3FD00E22DC9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FD30621F22A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FD61CAAD22A1C12D0005CD77 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FD26F1F622AB0AF000C55A9D /* refresh.png */,
+				FD280F0322B266EE00AEFE96 /* help.png */,
+				FD2835D722A4A5EC008CE2EB /* plus-white.png */,
+				FD394EE222A4511F00032219 /* octocat-white.pdf */,
+				FD30623D22A3591200E22DC9 /* radix-icon.png */,
+				FD30623522A3023900E22DC9 /* gitHub.png */,
+				FD30623322A2F65B00E22DC9 /* arrow-left.png */,
+				FD30622B22A2B18F00E22DC9 /* star.png */,
+				FD30622922A2B18200E22DC9 /* fork-icon.png */,
+				FD30622722A2A96B00E22DC9 /* chevron-right.png */,
+				FD61CAAE22A1C12D0005CD77 /* radix.jpg */,
+				FD61CAAF22A1C12D0005CD77 /* recent.png */,
+				FD61CAB022A1C12D0005CD77 /* search.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		FD61CAB622A1C1A90005CD77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD22088B22A1555600427C82 /* ViewController.swift */,
+				FD61CAB922A1C3360005CD77 /* HistoricoViewController.swift */,
+				FD61CABB22A1C4B90005CD77 /* UsuarioViewController.swift */,
+				FD30622F22A2F31900E22DC9 /* RepositorioViewController.swift */,
+				FD280EFF22B25B2900AEFE96 /* PDFViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FD61CAB722A1C1B10005CD77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD30622222A2A3FD00E22DC9 /* Cells */,
+				FD22088D22A1555600427C82 /* Main.storyboard */,
+				FD22089522A1555800427C82 /* LaunchScreen.storyboard */,
+				FD61CABC22A1C4B90005CD77 /* UsuarioViewController.xib */,
+				FD30623022A2F31900E22DC9 /* RepositorioViewController.xib */,
+				FD280F0022B25B2900AEFE96 /* PDFViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD61CAB822A1C1B90005CD77 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FD30621D22A2A3AE00E22DC9 /* Cells */,
+				FD61CAC622A203780005CD77 /* DAOs */,
+				FD61CAC122A2023F0005CD77 /* Structs */,
+				FD61CAC922A203FC0005CD77 /* Helpers */,
+				FD280EFC22B2583300AEFE96 /* Manual */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FD61CAC122A2023F0005CD77 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				FD61CAC222A202740005CD77 /* Usuario.swift */,
+				FD61CAC422A202B70005CD77 /* Repositorio.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		FD61CAC622A203780005CD77 /* DAOs */ = {
+			isa = PBXGroup;
+			children = (
+				FD61CAC722A203A00005CD77 /* GitHubApi.swift */,
+				FD26E3B122A7ED3E00C6120A /* UsuarioDAO.swift */,
+				FD26E3BE22A889F900C6120A /* RepositorioDAO.swift */,
+			);
+			path = DAOs;
+			sourceTree = "<group>";
+		};
+		FD61CAC922A203FC0005CD77 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD16A8E222ABED380004E366 /* CheckInternetConnectionHelper.swift */,
+				FD61CACA22A204280005CD77 /* Configuracao.swift */,
+				FD61CACC22A206140005CD77 /* AlertDialogHelper.swift */,
+				FD30623722A30F3400E22DC9 /* DataFormatHelper.swift */,
+				FD30623922A31E9400E22DC9 /* SafariHelper.swift */,
+				FD394EE422A45E9C00032219 /* Filtro.swift */,
+				FD2835D422A49C98008CE2EB /* OrdenaListaRepositorioHelper.swift */,
+				FD26E3C322A8A4AA00C6120A /* ConversorHelper.swift */,
+				FD16A8E422ABEF260004E366 /* BotaoAnimadoHelper.swift */,
+				FD29B67122B133A700837300 /* AutenticacaoHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD22088522A1555600427C82 /* mobile-challenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2208B122A1555800427C82 /* Build configuration list for PBXNativeTarget "mobile-challenger" */;
+			buildPhases = (
+				BD09748A0B47CD1CE3A3991B /* [CP] Check Pods Manifest.lock */,
+				FD22088222A1555600427C82 /* Sources */,
+				FD22088322A1555600427C82 /* Frameworks */,
+				FD22088422A1555600427C82 /* Resources */,
+				162D26363402F29FDCE799E4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mobile-challenger";
+			productName = "mobile-challenger";
+			productReference = FD22088622A1555600427C82 /* mobile-challenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD22089C22A1555800427C82 /* mobile-challengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2208B422A1555800427C82 /* Build configuration list for PBXNativeTarget "mobile-challengerTests" */;
+			buildPhases = (
+				26399CD385F59B9CD5FAB3D1 /* [CP] Check Pods Manifest.lock */,
+				FD22089922A1555800427C82 /* Sources */,
+				FD22089A22A1555800427C82 /* Frameworks */,
+				FD22089B22A1555800427C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD22089F22A1555800427C82 /* PBXTargetDependency */,
+			);
+			name = "mobile-challengerTests";
+			productName = "mobile-challengerTests";
+			productReference = FD22089D22A1555800427C82 /* mobile-challengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD2208A722A1555800427C82 /* mobile-challengerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD2208B722A1555800427C82 /* Build configuration list for PBXNativeTarget "mobile-challengerUITests" */;
+			buildPhases = (
+				3A2B4627B743FF32E962F64C /* [CP] Check Pods Manifest.lock */,
+				FD2208A422A1555800427C82 /* Sources */,
+				FD2208A522A1555800427C82 /* Frameworks */,
+				FD2208A622A1555800427C82 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD2208AA22A1555800427C82 /* PBXTargetDependency */,
+			);
+			name = "mobile-challengerUITests";
+			productName = "mobile-challengerUITests";
+			productReference = FD2208A822A1555800427C82 /* mobile-challengerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD22087E22A1555600427C82 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Filomeno;
+				TargetAttributes = {
+					FD22088522A1555600427C82 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					FD22089C22A1555800427C82 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FD22088522A1555600427C82;
+					};
+					FD2208A722A1555800427C82 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = FD22088522A1555600427C82;
+					};
+				};
+			};
+			buildConfigurationList = FD22088122A1555600427C82 /* Build configuration list for PBXProject "mobile-challenger" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD22087D22A1555600427C82;
+			productRefGroup = FD22088722A1555600427C82 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD22088522A1555600427C82 /* mobile-challenger */,
+				FD22089C22A1555800427C82 /* mobile-challengerTests */,
+				FD2208A722A1555800427C82 /* mobile-challengerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD22088422A1555600427C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD61CAB322A1C12D0005CD77 /* recent.png in Resources */,
+				FD26F1F722AB0AF000C55A9D /* refresh.png in Resources */,
+				FD61CABE22A1C4B90005CD77 /* UsuarioViewController.xib in Resources */,
+				FD61CAB422A1C12D0005CD77 /* search.png in Resources */,
+				FD61CAB222A1C12D0005CD77 /* radix.jpg in Resources */,
+				FD280EFE22B2585A00AEFE96 /* Desafio Mobile Manual de Usabilidade.pdf in Resources */,
+				FD394EE322A4511F00032219 /* octocat-white.pdf in Resources */,
+				FD30623622A3023A00E22DC9 /* gitHub.png in Resources */,
+				FD30622A22A2B18200E22DC9 /* fork-icon.png in Resources */,
+				FD30622122A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.xib in Resources */,
+				FD30622822A2A96C00E22DC9 /* chevron-right.png in Resources */,
+				FD22089722A1555800427C82 /* LaunchScreen.storyboard in Resources */,
+				FD30623222A2F31900E22DC9 /* RepositorioViewController.xib in Resources */,
+				FD30623E22A3591200E22DC9 /* radix-icon.png in Resources */,
+				FD22089422A1555800427C82 /* Assets.xcassets in Resources */,
+				FD280F0222B25B2900AEFE96 /* PDFViewController.xib in Resources */,
+				FD30622C22A2B18F00E22DC9 /* star.png in Resources */,
+				FD30623422A2F65B00E22DC9 /* arrow-left.png in Resources */,
+				FD22088F22A1555600427C82 /* Main.storyboard in Resources */,
+				FD2835D922A4A5EC008CE2EB /* plus-white.png in Resources */,
+				FD280F0422B266EE00AEFE96 /* help.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD22089B22A1555800427C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2208A622A1555800427C82 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		162D26363402F29FDCE799E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mobile-challenger/Pods-mobile-challenger-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mobile-challenger/Pods-mobile-challenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26399CD385F59B9CD5FAB3D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobile-challengerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A2B4627B743FF32E962F64C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobile-challengerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD09748A0B47CD1CE3A3991B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobile-challenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD22088222A1555600427C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD22089222A1555600427C82 /* mobile_challenger.xcdatamodeld in Sources */,
+				FD16A8E522ABEF260004E366 /* BotaoAnimadoHelper.swift in Sources */,
+				FD26E3C422A8A4AA00C6120A /* ConversorHelper.swift in Sources */,
+				FD280F0122B25B2900AEFE96 /* PDFViewController.swift in Sources */,
+				FD29B67222B133A700837300 /* AutenticacaoHelper.swift in Sources */,
+				FD16A8E322ABED380004E366 /* CheckInternetConnectionHelper.swift in Sources */,
+				FD30623A22A31E9400E22DC9 /* SafariHelper.swift in Sources */,
+				FD61CAC522A202B70005CD77 /* Repositorio.swift in Sources */,
+				FD30623822A30F3400E22DC9 /* DataFormatHelper.swift in Sources */,
+				FD22088C22A1555600427C82 /* ViewController.swift in Sources */,
+				FD26E3BF22A889F900C6120A /* RepositorioDAO.swift in Sources */,
+				FD2835D522A49C98008CE2EB /* OrdenaListaRepositorioHelper.swift in Sources */,
+				FD30623C22A355A800E22DC9 /* HistoricoTableViewCell.swift in Sources */,
+				FD61CAC322A202740005CD77 /* Usuario.swift in Sources */,
+				FD394EE522A45E9C00032219 /* Filtro.swift in Sources */,
+				FD61CABD22A1C4B90005CD77 /* UsuarioViewController.swift in Sources */,
+				FD22088A22A1555600427C82 /* AppDelegate.swift in Sources */,
+				FD61CACD22A206140005CD77 /* AlertDialogHelper.swift in Sources */,
+				FD26E3B222A7ED3E00C6120A /* UsuarioDAO.swift in Sources */,
+				FD61CABA22A1C3360005CD77 /* HistoricoViewController.swift in Sources */,
+				FD30623122A2F31900E22DC9 /* RepositorioViewController.swift in Sources */,
+				FD61CAC822A203A00005CD77 /* GitHubApi.swift in Sources */,
+				FD30622022A2A3F300E22DC9 /* RepositoriosUsuarioTableViewCell.swift in Sources */,
+				FD61CACB22A204280005CD77 /* Configuracao.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD22089922A1555800427C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD1C5DC122B0874400D9E804 /* DataFormatHelperTests.swift in Sources */,
+				FD1C5DC322B088DF00D9E804 /* FiltroTests.swift in Sources */,
+				FD1C5DC522B093D000D9E804 /* OrdenaListaRepositorioHelperTests.swift in Sources */,
+				FDAA440E22AFF57500D7E24A /* UsuarioDAOTests.swift in Sources */,
+				FDAA441222B017CB00D7E24A /* ConversorHelperTests.swift in Sources */,
+				FDAA441022B00AC800D7E24A /* RepositorioDAOTests.swift in Sources */,
+				FD1C5DBF22B085EC00D9E804 /* ConfiguracaoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD2208A422A1555800427C82 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD2208AD22A1555800427C82 /* mobile_challengerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD22089F22A1555800427C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD22088522A1555600427C82 /* mobile-challenger */;
+			targetProxy = FD22089E22A1555800427C82 /* PBXContainerItemProxy */;
+		};
+		FD2208AA22A1555800427C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD22088522A1555600427C82 /* mobile-challenger */;
+			targetProxy = FD2208A922A1555800427C82 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD22088D22A1555600427C82 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD22088E22A1555600427C82 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD22089522A1555800427C82 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD22089622A1555800427C82 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD2208AF22A1555800427C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD2208B022A1555800427C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD2208B222A1555800427C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8A56C2C8C190671E58733EF /* Pods-mobile-challenger.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Z9E7AHN7;
+				INFOPLIST_FILE = "mobile-challenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.infnet.al-rodrigo.filomeno.mobile-challenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD2208B322A1555800427C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECFB8649B319F55315DCD5EA /* Pods-mobile-challenger.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Z9E7AHN7;
+				INFOPLIST_FILE = "mobile-challenger/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.infnet.al-rodrigo.filomeno.mobile-challenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FD2208B522A1555800427C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 962505BE46AC447380CFCC0F /* Pods-mobile-challengerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Z9E7AHN7;
+				INFOPLIST_FILE = "mobile-challengerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.infnet.al-rodrigo.filomeno.mobile-challengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobile-challenger.app/mobile-challenger";
+			};
+			name = Debug;
+		};
+		FD2208B622A1555800427C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A79B3E92967F9F52702FB99 /* Pods-mobile-challengerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Z9E7AHN7;
+				INFOPLIST_FILE = "mobile-challengerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.infnet.al-rodrigo.filomeno.mobile-challengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mobile-challenger.app/mobile-challenger";
+			};
+			name = Release;
+		};
+		FD2208B822A1555800427C82 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C822F0CF79C9992A7C1AE230 /* Pods-mobile-challengerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Z9E7AHN7;
+				INFOPLIST_FILE = "mobile-challengerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.infnet.al-rodrigo.filomeno.mobile-challengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mobile-challenger";
+			};
+			name = Debug;
+		};
+		FD2208B922A1555800427C82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 475D0AF1F1F8DBA76C4648BF /* Pods-mobile-challengerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S7Z9E7AHN7;
+				INFOPLIST_FILE = "mobile-challengerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.edu.infnet.al-rodrigo.filomeno.mobile-challengerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "mobile-challenger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD22088122A1555600427C82 /* Build configuration list for PBXProject "mobile-challenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2208AF22A1555800427C82 /* Debug */,
+				FD2208B022A1555800427C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2208B122A1555800427C82 /* Build configuration list for PBXNativeTarget "mobile-challenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2208B222A1555800427C82 /* Debug */,
+				FD2208B322A1555800427C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2208B422A1555800427C82 /* Build configuration list for PBXNativeTarget "mobile-challengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2208B522A1555800427C82 /* Debug */,
+				FD2208B622A1555800427C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD2208B722A1555800427C82 /* Build configuration list for PBXNativeTarget "mobile-challengerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD2208B822A1555800427C82 /* Debug */,
+				FD2208B922A1555800427C82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD22089022A1555600427C82 /* mobile_challenger.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD22089122A1555600427C82 /* mobile_challenger.xcdatamodel */,
+			);
+			currentVersion = FD22089122A1555600427C82 /* mobile_challenger.xcdatamodel */;
+			path = mobile_challenger.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD22087E22A1555600427C82 /* Project object */;
+}

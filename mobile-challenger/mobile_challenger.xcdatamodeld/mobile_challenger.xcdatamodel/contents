@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="RepositorioDataModel" representedClassName="RepositorioDataModel" syncable="YES" codeGenerationType="class">
+        <attribute name="dataDeCriacaoDoRepositorio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descricaoCompleta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="linguagem" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nomeDoRepositorio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroDeForks" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numeroDeIssuesAbertas" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numeroDeIssuesFechadas" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numeroDeStars" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="urlDoRepositorio" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UsuarioDataModel" inverseName="repositorios" inverseEntity="UsuarioDataModel" syncable="YES"/>
+    </entity>
+    <entity name="UsuarioDataModel" representedClassName="UsuarioDataModel" syncable="YES" codeGenerationType="class">
+        <attribute name="avatar" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroRepositoriosPublicos" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seguidores" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="seguindo" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="urlDoUsuario" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="user" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="repositorios" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="RepositorioDataModel" inverseName="usuario" inverseEntity="RepositorioDataModel" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RepositorioDataModel" positionX="-296.5" positionY="-87.26953125" width="128" height="210"/>
+        <element name="UsuarioDataModel" positionX="-531.4609375" positionY="-90.40625" width="128" height="180"/>
+    </elements>
+</model>
